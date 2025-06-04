@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Updates - Ruff Cutz Ethical Musical Collective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="hamsen.png" alt="Ruff Cutz Logo" class="logo">
+            <h1>Ruff Cutz Ethical Musical Collective</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="signup.html">SMS Updates</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Ruff Cutz Broadcast Service</h2>
+                <p>The Ruff Cutz Ethical Musical Collective are a New Orleans based musical outfit playing tunes that make you feel.</p>
+                <p>If you're interested in getting updates from the band by SMS you can sign up here.</p>
+                <p class="notice">This service is managed by eBro LLC which is owned and operated by Evan Stoudt. For information about services and opportunities for partnership, please reach out by email or phone:</p>
+                <p class="contact-info">
+                    <a href="mailto:evan.stoudt@gmail.com">evan.stoudt@gmail.com</a><br>
+                    504.296.0202
+                </p>
+            </div>
+        </section>
+
+        <section class="forms">
+            <div class="container">
+                <div class="form-section">
+                    <h3>Sign up for Ruff Cutz SMS Updates</h3>
+                    <h4>Subscribe:</h4>
+                    <form id="subscribe-form" class="sms-form">
+                        <div class="form-group">
+                            <label for="subscribe-name">Name <span class="required">(required)</span></label>
+                            <input type="text" id="subscribe-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subscribe-phone">Phone Number <span class="required">(required)</span></label>
+                            <input type="tel" id="subscribe-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="subscribe-consent" name="consent" required>
+                            <label for="subscribe-consent">
+                                I consent to receive messages from The Ruff Cutz Ethical Musical Collective.
+                                <span class="required">(required)</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h3>Unsubscribe from Ruff Cutz SMS Updates</h3>
+                    <h4>Unsubscribe:</h4>
+                    <form id="unsubscribe-form" class="sms-form">
+                        <div class="form-group">
+                            <label for="unsubscribe-name">Name <span class="required">(required)</span></label>
+                            <input type="text" id="unsubscribe-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="unsubscribe-phone">Phone Number <span class="required">(required)</span></label>
+                            <input type="tel" id="unsubscribe-phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="unsubscribe-confirm" name="confirm" required>
+                            <label for="unsubscribe-confirm">
+                                I would like to be removed from The Ruff Cutz Ethical Musical Collective messaging service
+                                <span class="required">(required)</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ruff Cutz Ethical Musical Collective</p>
+            <p>Managed by eBro LLC | <a href="mailto:evan.stoudt@gmail.com">evan.stoudt@gmail.com</a> | 504.296.0202</p>
+        </div>
+    </footer>
+
+    <script>
+        // Basic form submission handlers
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing! You will receive a confirmation message shortly.');
+            this.reset();
+        });
+
+        document.getElementById('unsubscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('You have been unsubscribed. We\'re sorry to see you go!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
