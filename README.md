@@ -27,7 +27,7 @@ This site is designed to be hosted on GitHub Pages. See `GITHUB_SETUP.md` for de
 ## Contact
 
 This service is managed by eBro LLC.
-- Email: evan.stoudt@gmail.com
+- Email: evan@evanstoudt.com
 - Phone: 504.296.0202
 
 ## Links
